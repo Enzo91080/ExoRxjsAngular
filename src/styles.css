@@ -1,0 +1,45 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: O;
+  box-sizing: border-box;
+}
+
+#game-ground {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* position: relative; */
+  background: yellow;
+  display:flex;
+  justify-content: center;
+}
+
+/*on utilise une classe car on se laisse la possibilité d'ajouter d'autres invaders*/
+.invader {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  background-color: red;
+  left: 40%;
+  top: 0px;
+}
+
+/* on utilise un id car cet élément est unique dans le html*/
+#countDown{
+  place-self: center;
+  font-size: 3rem;
+  background-color: black;
+  color:red;
+  font-family: 'Courier New', Courier, monospace;
+  padding:1rem;
+}

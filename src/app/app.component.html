@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="game-ground" #gameGround>
+      <div class="invader" #invader1 [ngStyle]="{top:top + 'px'}"></div>
+      <div *ngIf="countDown >= 0" id="countDown">
+        {{countDown}}
+      </div>
+    </div>
+  </body>
+</html>
